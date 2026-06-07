@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Autogen Legal</title>
+    <title>Autogen</title>
     <style>
       body {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -30,6 +30,26 @@
         border-radius: 8px;
         padding: 24px;
       }
+      .eyebrow {
+        color: #5d6d7e;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        list-style: none;
+        padding-left: 0;
+      }
+      .links a {
+        display: inline-block;
+        border: 1px solid #c8d1dc;
+        border-radius: 6px;
+        padding: 8px 12px;
+        text-decoration: none;
+        background: #fff;
+      }
       ul {
         padding-left: 1.25rem;
       }
@@ -38,15 +58,30 @@
   <body>
     <main>
       <div class="panel">
-        <h1>Autogen Legal</h1>
+        <p class="eyebrow">Educational video generation and publishing tool</p>
+        <h1>Autogen</h1>
         <p>
           Autogen is a local desktop tool for creating educational short-form
-          videos about arXiv physics papers and publishing them to authorized
-          social media accounts.
+          videos about arXiv physics papers. It helps generate scripts,
+          AI-assisted visuals, voice narration, rendered videos, captions, and
+          verification reports.
         </p>
-        <ul>
+        <p>
+          When a user authorizes a TikTok account, Autogen can use TikTok Login
+          Kit and the TikTok Content Posting API to upload videos to that
+          authorized account. Publishing remains controlled by the user's local
+          configuration and TikTok account authorization.
+        </p>
+        <h2>App Links</h2>
+        <ul class="links">
           <li><a href="terms.html">Terms of Service</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+        <h2>Platform</h2>
+        <ul>
+          <li>Desktop application workflow</li>
+          <li>Local project storage for generated media and OAuth token files</li>
+          <li>TikTok upload only after user authorization</li>
         </ul>
       </div>
     </main>
